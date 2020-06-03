@@ -21,12 +21,15 @@ def xisoslice(iso_array, iso_value, projected_array, coord):
     '''Calculate an isosurface
     This function calculates the value of projected_array on
     an isosurface in the array iso_array defined by iso_val.
+    
+    
     Inputs:
     iso_array:       xarray.DataArray in which the isosurface is defined
     iso_value:       float: value of the isosurface in iso_array
     projected_array: xarray.DataArray in which to project values on the isosurface
                      Needs to have the same dimensions and shape as iso_array
     coord:           string: coordinate associated with the dimension along which to project
+    
     Output:
     iso_values:      xarray.DataArray: values of projected_array on the isosurface
     '''
